@@ -1,6 +1,5 @@
-let operation: string | "add" | "subtract" | "multiply" | "divide";
-
-function calculate(a: number, b: number, operation: number | string) {
+var operation;
+function calculate(a, b, operation) {
     switch (operation) {
         case "add":
             return a + b;
@@ -11,12 +10,11 @@ function calculate(a: number, b: number, operation: number | string) {
         case "divide":
             if (b !== 0) {
                 return a / b;
-            } else {
-                return "DON*T YOU F#!KING DARE DEVIDEING BY 0!!!"
+            }
+            else {
+                return "DON*T YOU F#!KING DARE DEVIDEING BY 0!!!";
             }
     }
 }
-
-
-const result = calculate(7, 5, "devide" )
+var result = calculate(7, 5, "devide");
 console.log(result);
